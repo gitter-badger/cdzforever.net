@@ -3,8 +3,8 @@
 PIPELINE_CSS = {
     'bootstrap': {
         'source_filenames': {
-            'css/bootstrap.css',
-            'css/bootstrap-theme.css',
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'bower_components/bootstrap/dist/css/bootstrap-theme.css',
         },
         'output_filename': 'css/bootstrap.min.css',
     }
@@ -13,14 +13,14 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'jquery': {
         'source_filenames': {
-            'js/jquery-2.1.1.js',
+            'bower_components/jquery/dist/jquery.js',
         },
-        'output_filename': 'css/jquery.min.css',
+        'output_filename': 'js/jquery.min.css',
     },
 
     'bootstrap': {
         'source_filenames': {
-            'js/bootstrap.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
         },
         'output_filename': 'js/bootstrap.min.js',
     }
