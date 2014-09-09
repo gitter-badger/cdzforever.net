@@ -14,7 +14,7 @@ from decouple import config, Csv
 from dj_database_url import parse as db_url
 from unipath import Path
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 
 SITE_ID = 1
 
