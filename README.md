@@ -1,6 +1,6 @@
 # CDZForever
 
-CDZForever oficial website
+CDZForever official website
 
 ## Install
 
