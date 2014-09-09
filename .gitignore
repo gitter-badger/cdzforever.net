@@ -3,3 +3,4 @@
 .python-version
 node_modules/
 bower_components/
+npm-debug.log
