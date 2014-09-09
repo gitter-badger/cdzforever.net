@@ -1,8 +1,8 @@
 .env
-.venv
 .python-version
-node_modules/
+.venv
 bower_components/
+node_modules/
 npm-debug.log
-static/less/*.css
 static/coffee/*.js
+static/less/*.css
