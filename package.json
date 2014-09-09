@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "less": "~1.7.5",
+    "yuglify": "~0.1.4",
+    "coffee-script": "~1.8.0"
+  }
+}
