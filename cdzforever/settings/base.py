@@ -9,11 +9,12 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 import os
+
 from decouple import config, Csv
 from dj_database_url import parse as db_url
+from unipath import Path
 
-
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = Path(__file__).parent
 
 SITE_ID = 1
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = (
     'bootstrap3',
     'debug_toolbar.apps.DebugToolbarConfig',
     'django_extensions',
+    'pipeline',
     'reversion',
     # app
     'cdzforever.core',
@@ -109,6 +111,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'tmp', 'static-root')
@@ -116,3 +120,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'tmp', 'static-root')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+from .pipeline import *
