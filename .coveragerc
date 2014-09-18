@@ -1,0 +1,4 @@
+[run]
+branch=True
+source=.
+omit=cdzforever/wsgi.py, manage.py

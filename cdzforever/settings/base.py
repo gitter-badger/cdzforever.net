@@ -50,6 +50,7 @@ INSTALLED_APPS = (
     'reversion',
     # app
     'cdzforever.core',
+    'cdzforever.downloads',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -111,7 +112,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
 
 STATIC_URL = '/static/'
 
