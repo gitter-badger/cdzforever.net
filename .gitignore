@@ -3,6 +3,7 @@
 .python-version
 .venv
 bower_components/
+htmlcov/
 node_modules/
 npm-debug.log
 static/coffee/*.js
