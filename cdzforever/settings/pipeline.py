@@ -4,7 +4,7 @@ PIPELINE_CSS = {
     'bootstrap': {
         'source_filenames': {
             'bower_components/bootstrap/dist/css/bootstrap.css',
-            'bower_components/bootstrap/dist/css/bootstrap-theme.css',
+            # 'bower_components/bootstrap/dist/css/bootstrap-theme.css',
         },
         'output_filename': 'css/bootstrap.min.css',
     },
