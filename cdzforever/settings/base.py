@@ -49,8 +49,8 @@ INSTALLED_APPS = (
     'pipeline',
     'reversion',
     # app
+    'cdzforever.catalogo',
     'cdzforever.core',
-    'cdzforever.downloads',
 )
 
 MIDDLEWARE_CLASSES = (
