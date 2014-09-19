@@ -2,6 +2,7 @@
 .env
 .python-version
 .venv
+.tox/
 bower_components/
 htmlcov/
 node_modules/
